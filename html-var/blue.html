@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table-blue</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th class="col1">SL No.</th>
+            <th class="col2">Client Name</th>
+            <th class="col3">Company</th>
+            <th class="col4">Tender</th>
+            <th class="col5">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col1">1</td>
+            <td class="col2">Alice</td>
+            <td class="col3">SkyNet Sys</td>
+            <td class="col4">Cloud Migration</td>
+            <td class="col5">Active</td>
+          </tr>
+          <tr>
+            <td class="col1">2</td>
+            <td class="col2">Bob</td>
+            <td class="col3">Cyberdyne</td>
+            <td class="col4">AI Research</td>
+            <td class="col5">Pending</td>
+          </tr>
+          <tr>
+            <td class="col1">3</td>
+            <td class="col2">Charlie</td>
+            <td class="col3">Hooli</td>
+            <td class="col4">Compression</td>
+            <td class="col5">Completed</td>
+          </tr>
+          <tr>
+            <td class="col1">4</td>
+            <td class="col2">Diana</td>
+            <td class="col3">Initech</td>
+            <td class="col4">Consulting</td>
+            <td class="col5">In Progress</td>
+          </tr>
+          <tr>
+            <td class="col1">5</td>
+            <td class="col2">Evan</td>
+            <td class="col3">Massive Dyn</td>
+            <td class="col4">Security</td>
+            <td class="col5">Review</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <style>
+    body {
+      background-color: azure;
+      font-family: Verdana;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 30px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 10px 20px;
+    }
+
+    th {
+      font-family: verdana;
+    }
+
+    td {
+      font-family: courier;
+    }
+
+    ::selection {
+      background-color: #b4ffff;
+      color: black;
+    }
+
+    /* hover */
+
+    tr:hover {
+      background-color: azure;
+    }
+
+    table:has(.col1:hover) .col1:not(:hover),
+    table:has(.col2:hover) .col2:not(:hover),
+    table:has(.col3:hover) .col3:not(:hover),
+    table:has(.col4:hover) .col4:not(:hover),
+    table:has(.col5:hover) .col5:not(:hover) {
+      background-color: azure;
+    }
+
+    .col1:hover,
+    .col2:hover,
+    .col3:hover,
+    .col4:hover,
+    .col5:hover {
+      background-color: #b4ffff;
+    }
+  </style>
+</html>
