@@ -6,18 +6,25 @@
     <title>table-main</title>
   </head>
   <body>
-    <button style="background-color: red">
-      <a href="html-var/red.html">Red</a>
-    </button>
-    <button style="background-color: green">
-      <a href="html-var/green.html">Green</a>
-    </button>
-    <button style="background-color: blue">
-      <a href="html-var/blue.html">Blue</a>
-    </button>
-    <button style="background-color: yellow">
-      <a href="html-var/yellow.html">Yellow</a>
-    </button>
+    <div style="display: block">
+      <button style="background-color: red">
+        <a href="html-var/red.html">Red</a>
+      </button>
+      <button style="background-color: green">
+        <a href="html-var/green.html">Green</a>
+      </button>
+      <button style="background-color: blue">
+        <a href="html-var/blue.html">Blue</a>
+      </button>
+      <button style="background-color: yellow">
+        <a href="html-var/yellow.html">Yellow</a>
+      </button>
+    </div>
+    <div style="display: block">
+      <button style="background-color: orange">
+        <a href="html-var/orange.html">Orange</a>
+      </button>
+    </div>
     <div id="github-container">
       <a href="https://github.com/tomal-khan/table" target="_blank">
         <img src="./assets/img/github.png" alt="github-logo" />
@@ -28,6 +35,7 @@
   <style>
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
